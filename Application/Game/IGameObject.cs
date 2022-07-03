@@ -1,18 +1,14 @@
 ﻿using Application.Math;
-using Application.Types;
 
 namespace Application.Game;
 
-//rozdziel se to jakos
-
-
 public interface IGameObject
 {
-    public IntPtr BaseAddress { get; }
+    public int Address { get; }
     public float Health { get; }
     public float MaxHealth { get; }
     public int Team { get; }
-    public IRiotString Name { get; } // [(IntPtr)NamePtr] + 0x00 (50 length)
+    public string Name { get; } // [(IntPtr)NamePtr] + 0x00 (50 length)
     public bool IsAlive { get; }
     public bool IsVisible { get; }
     public float AttackRange { get; }
@@ -23,6 +19,5 @@ public interface IGameObject
     public float MovementSpeed { get; }
     public bool IsMoving { get; }
     public bool AttackSpeedMultiplier { get; } // multiplier (base_attack_speed * multiplier = attack speed)
-    public SpellBook GetSpellBook { get; }
-
+    public ISpellBook GetSpellBook { get; }
 }

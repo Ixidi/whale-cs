@@ -1,29 +1,26 @@
 ﻿namespace Application.Game;
 
-public interface SpellSlot
+public interface ISpellSlot
 {
     public float ReadyTime { get; }
     public float ReadyAt { get; }
-
     public float Damage { get; }
-
     public string Name { get; }
-
     public float Level { get; }
 
     
 }
 
-public interface SpellBook
+public interface ISpellBook
 {
     
-    public SpellSlot SpellQ { get; set; }
-    public SpellSlot SpellW { get; set; }
-    public SpellSlot SpellE { get; set; }
-    public SpellSlot SpellR { get; set; }
-    public SpellSlot SpellD { get; set; }
-    public SpellSlot SpellF { get; set; }
+    public ISpellSlot SpellQ { get; set; }
+    public ISpellSlot SpellW { get; set; }
+    public ISpellSlot SpellE { get; set; }
+    public ISpellSlot SpellR { get; set; }
+    public ISpellSlot SpellD { get; set; }
+    public ISpellSlot SpellF { get; set; }
 
-    SpellBook Load();
+    ISpellBook Load();
 
 }
