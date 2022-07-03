@@ -23,9 +23,6 @@ public interface IVector2
     IVector2 Divide(double divisor);
 
     IVector2 Rotate(double angle);
-    
-    IVector2 CrossProduct(IVector2 vec);
-    IVector2 DotProduct(IVector2 vec);
 
     public static IVector2 operator +(IVector2 a, IVector2 b) => a.Add(b);
     public static IVector2 operator -(IVector2 a, IVector2 b) => a.Subtract(b);
