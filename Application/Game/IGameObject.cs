@@ -4,20 +4,20 @@ namespace Application.Game;
 
 public interface IGameObject
 {
-    public int Address { get; }
-    public float Health { get; }
-    public float MaxHealth { get; }
-    public int Team { get; }
-    public string Name { get; } // [(IntPtr)NamePtr] + 0x00 (50 length)
-    public bool IsAlive { get; }
-    public bool IsVisible { get; }
-    public float AttackRange { get; }
-    public float Armor { get; }
-    public float AttackDamage { get; } // base + bonus attack dmg (two addresses)
-    public float CriticalChance { get; }
-    public IVector3 Position { get; }
-    public float MovementSpeed { get; }
-    public bool IsMoving { get; }
-    public bool AttackSpeedMultiplier { get; } // multiplier (base_attack_speed * multiplier = attack speed)
-    public ISpellBook GetSpellBook { get; }
+     int Address { get; }
+     float Health { get; }
+     float MaxHealth { get; }
+     int Team { get; }
+     string Name { get; } // [(IntPtr)NamePtr] + 0x00 (50 length)
+     bool IsAlive { get; }
+     bool IsVisible { get; }
+     float AttackRange { get; }
+     float Armor { get; }
+     float AttackDamage { get; } // base + bonus attack dmg (two addresses)
+     float CriticalChance { get; }
+     IVector3 Position { get; }
+     float MovementSpeed { get; }
+     bool IsMoving { get; }
+     bool AttackSpeedMultiplier { get; } // multiplier (base_attack_speed * multiplier = attack speed)
+     ISpellBook GetSpellBook { get; }
 }
