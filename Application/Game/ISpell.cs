@@ -2,11 +2,11 @@
 
 public interface ISpellSlot
 {
-    public float ReadyTime { get; }
-    public float ReadyAt { get; }
-    public float Damage { get; }
-    public string Name { get; }
-    public float Level { get; }
+     float ReadyTime { get; }
+     float ReadyAt { get; }
+     float Damage { get; }
+     string Name { get; }
+     float Level { get; }
 
     
 }
@@ -14,12 +14,12 @@ public interface ISpellSlot
 public interface ISpellBook
 {
     
-    public ISpellSlot SpellQ { get; set; }
-    public ISpellSlot SpellW { get; set; }
-    public ISpellSlot SpellE { get; set; }
-    public ISpellSlot SpellR { get; set; }
-    public ISpellSlot SpellD { get; set; }
-    public ISpellSlot SpellF { get; set; }
+     ISpellSlot SpellQ { get; set; }
+     ISpellSlot SpellW { get; set; }
+     ISpellSlot SpellE { get; set; }
+     ISpellSlot SpellR { get; set; }
+     ISpellSlot SpellD { get; set; }
+     ISpellSlot SpellF { get; set; }
 
     ISpellBook Load();
 

@@ -5,13 +5,13 @@
  */
 public interface IObjectManager
 {
-    public List<int> Champions { get; }
-    public List<int> Minions { get; }
-    public List<int> Turrets { get; }
-    public List<int> JungleMonsters { get; }
+    List<int> Champions { get; }
+    List<int> Minions { get; }
+    List<int> Turrets { get; }
+    List<int> JungleMonsters { get; }
     // may be more for example missiles or plants.
 
-    public void ScanUnit(int address);
-    public void ScanUnits(int objectManagerAddress);
-    public void UpdateUnit(int netId, int address);
+    void ScanUnit(int address);
+    void ScanUnits(int objectManagerAddress);
+    void UpdateUnit(int netId, int address);
 }
