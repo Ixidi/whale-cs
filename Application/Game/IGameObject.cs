@@ -1,4 +1,5 @@
-﻿using Application.Types;
+﻿using Application.Math;
+using Application.Types;
 
 namespace Application.Game;
 
@@ -18,11 +19,10 @@ public interface IGameObject
     public float Armor { get; }
     public float AttackDamage { get; } // base + bonus attack dmg (two addresses)
     public float CriticalChance { get; }
-    public Vector3 Position { get; }
+    public IVector3 Position { get; }
     public float MovementSpeed { get; }
     public bool IsMoving { get; }
     public bool AttackSpeedMultiplier { get; } // multiplier (base_attack_speed * multiplier = attack speed)
-
     public SpellBook GetSpellBook { get; }
 
 }
