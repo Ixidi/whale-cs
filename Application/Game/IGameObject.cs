@@ -1,4 +1,6 @@
-﻿namespace Application.Game;
+﻿using Application.Types;
+
+namespace Application.Game;
 
 //rozdziel se to jakos
 
@@ -9,7 +11,7 @@ public interface IGameObject
     public float Health { get; }
     public float MaxHealth { get; }
     public int Team { get; }
-    public RiotString Name { get; } // [(IntPtr)NamePtr] + 0x00 (50 length)
+    public IRiotString Name { get; } // [(IntPtr)NamePtr] + 0x00 (50 length)
     public bool IsAlive { get; }
     public bool IsVisible { get; }
     public float AttackRange { get; }
