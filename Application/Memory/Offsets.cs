@@ -2,6 +2,14 @@
 
 public static class Offsets
 {
+    // Game offsets
+    public static int GTime = 0x31002F8;
+    public static int GObjectManager = 0x1868CF8;
+    public static int GLocalPlayer = 0x3107314;
+    public static int GUnderMouseObject = 0x24B7D9C;
+    public static int GRenderer = 0x3138FAC;
+        
+    // Object offsets
     public static int OIndex = 0x8;
     public static int OTeam = 0x34;
     public static int OHealth = 0xE74;
